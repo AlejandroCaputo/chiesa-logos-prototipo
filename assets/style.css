@@ -189,7 +189,9 @@ a.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(22,35,
 .dash aside .grp{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#9CA3AF;margin:18px 10px 8px}
 .dash aside a{display:flex;gap:10px;align-items:center;padding:9px 12px;border-radius:9px;text-decoration:none;font-size:.92rem;color:#374151}
 .dash aside a.on{background:var(--ink);color:#fff}
-.dash main{padding:28px 34px}
+.dash main{padding:28px 34px;min-width:0}
+.dgrid>div{min-width:0}
+.panel{overflow-x:auto}
 .dash h1{font-family:var(--sans);font-size:1.6rem;font-weight:700;color:#111827}
 .panel{background:#fff;border:1px solid #E5E7EB;border-radius:14px;padding:22px 24px;margin-bottom:22px}
 .panel h2{font-family:var(--sans);font-size:1.05rem;font-weight:700;color:#111827;margin-bottom:4px}
@@ -241,4 +243,10 @@ a.card:hover{transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(22,35,
   .dest{grid-template-columns:1fr}
   .dash main{padding:20px 16px}
   .tbl{font-size:.8rem}
+  .thumb .lam{display:none}
+  .big .thumb .ttl{font-size:1.25rem}
+  .video .thumb .play{width:56px!important;height:56px!important;top:40%}
+  .card.feat{flex-direction:column!important}
+  .card.feat .thumb{width:100%!important;min-height:200px!important}
+  .card.feat .body{padding:22px!important}
 }
