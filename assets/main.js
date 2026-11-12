@@ -21,7 +21,7 @@
     <div class="cols">
       <div>
         <span class="logo-w"><img src="assets/img/logo.png" alt="Logos"></span>
-        <p style="max-width:24em;margin:0">Una comunità evangelica che trova la sua identità nella grazia e nell'amore di Dio. Uniti nella Speranza, Legati nella Fede.</p>
+        <p style="max-width:24em;margin:0">Una chiesa centrata nel Vangelo e nella predicazione della Parola di Dio, a Firenze.</p><p style="max-width:24em;margin:10px 0 0;font-style:italic;color:#A3AA8E">Uniti nella Speranza, Legati nella Fede</p>
         <div class="soc"><a href="https://www.facebook.com/ChiesaLogos/" title="Facebook">FB</a><a href="https://www.instagram.com/chiesalogos/" title="Instagram">IG</a><a href="#" title="YouTube">YT</a><a href="#" title="Spotify">SP</a><a href="#" title="WhatsApp">WA</a></div>
       </div>
       <div><h4>Domenica</h4><span style="display:block;margin-bottom:8px">Accoglienza 10.00</span><span style="display:block;margin-bottom:8px">Culto 10.30 - 12.15</span><span>Via del Pergolino 1/4<br>50139 Firenze</span></div>

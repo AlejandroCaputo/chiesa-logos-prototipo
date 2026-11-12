@@ -81,6 +81,9 @@ p{margin:0 0 1em}
 .start h3{font-size:1.15rem}
 .start h3::after{content:" →";color:var(--accent)}
 .start p{font-size:.94rem;color:var(--muted);margin:0}
+.pillars{grid-template-columns:repeat(4,1fr)}
+.pillars>div{border-top:1px solid var(--line);padding-top:22px}
+.pillars h3{font-size:1.08rem}
 
 /* devotional */
 .dev{display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:center}
@@ -272,7 +275,7 @@ a.card:hover h3{color:var(--accent)}
   .split,.dev,.sermons,.sermon,.person,.join{grid-template-columns:1fr;gap:32px}
   .dev .cover{max-width:360px}
   .side{position:static}
-  .g3,.g4,.meet{grid-template-columns:1fr 1fr}
+  .g3,.g4,.meet,.pillars{grid-template-columns:1fr 1fr}
   .foot .cols{grid-template-columns:1fr 1fr}
   .dash{grid-template-columns:1fr}
   .dash aside{display:none}
@@ -286,7 +289,7 @@ a.card:hover h3{color:var(--accent)}
   .sec{padding:64px 0}
   .hero{padding:64px 0 52px}
   .times{gap:24px;flex-direction:column}
-  .start,.g2,.g3,.g4,.meet{grid-template-columns:1fr}
+  .start,.g2,.g3,.g4,.meet,.pillars{grid-template-columns:1fr}
   .srow{grid-template-columns:120px 1fr}
   .foot .cols{grid-template-columns:1fr}
   .dest{grid-template-columns:1fr}
