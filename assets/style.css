@@ -1,6 +1,6 @@
 /* Chiesa Evangelica Logos · Firenze */
 :root{
-  --ink:#1D2A33; --ink-2:#33414C; --text:#4A5464; --muted:#7A8290;
+  --ink:#22261E; --ink-2:#3A3F33; --brand:#5E7020; --brand-2:#3E4A16; --brand-3:#2F3812; --text:#4A5464; --muted:#7A8290;
   --accent:#B5732E; --accent-2:#9A5F22; --green:#7F9632; --blue:#3E8FC2;
   --sand:#F6F2EC; --sand-2:#EEE7DD; --line:#E6E1D9; --white:#fff;
   --font:"Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -32,20 +32,20 @@ p{margin:0 0 1em}
 .nav{display:flex;align-items:center;gap:28px}
 .nav a{font-size:.95rem;color:var(--ink-2);font-weight:500}
 .nav a:hover,.nav a.on{color:var(--accent)}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--ink);color:#fff;padding:11px 20px;border-radius:8px;font-weight:600;font-size:.93rem;border:0;cursor:pointer;font-family:var(--font);white-space:nowrap}
-.btn:hover{background:#000}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--brand);color:#fff;padding:11px 20px;border-radius:8px;font-weight:600;font-size:.93rem;border:0;cursor:pointer;font-family:var(--font);white-space:nowrap}
+.btn:hover{background:var(--brand-2)}
 .nav a.btn{color:#fff}
 .btn.line{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
-.btn.line:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.btn.line:hover{box-shadow:inset 0 0 0 1px var(--brand)}
 .btn.acc{background:var(--accent)}
 .btn.acc:hover{background:var(--accent-2)}
 .menu{display:none;background:none;border:0;font-size:1.5rem;color:var(--ink);cursor:pointer}
 
 /* hero */
 .hero{position:relative;text-align:center;padding:96px 0 72px;background:
-  radial-gradient(60% 70% at 15% 10%, rgba(101,181,230,.16), transparent 70%),
+  radial-gradient(60% 70% at 15% 10%, rgba(158,180,61,.16), transparent 70%),
   radial-gradient(50% 60% at 90% 20%, rgba(202,132,56,.14), transparent 70%),
-  radial-gradient(60% 60% at 60% 100%, rgba(158,180,61,.12), transparent 70%), #FBFAF8;border-bottom:1px solid var(--line)}
+  radial-gradient(60% 60% at 60% 100%, rgba(101,181,230,.10), transparent 70%), #FBFAF8;border-bottom:1px solid var(--line)}
 .hero h1{max-width:12em;margin:0 auto .35em}
 .hero p.lead{font-size:1.18rem;max-width:34em;margin:0 auto 30px;color:var(--text)}
 .hero .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
@@ -84,21 +84,21 @@ p{margin:0 0 1em}
 
 /* devotional */
 .dev{display:grid;grid-template-columns:340px 1fr;gap:56px;align-items:center}
-.cover{aspect-ratio:1;border-radius:10px;overflow:hidden;position:relative;background:linear-gradient(170deg,#D7E3EC 0%,#EFE9DF 55%,#E8D3C2 100%);padding:28px;display:flex;flex-direction:column;box-shadow:0 18px 40px -24px rgba(29,42,51,.45)}
+.cover{aspect-ratio:1;border-radius:10px;overflow:hidden;position:relative;background:linear-gradient(170deg,#E3E9D2 0%,#F1ECE1 55%,#EAD6C2 100%);padding:28px;display:flex;flex-direction:column;box-shadow:0 18px 40px -24px rgba(29,42,51,.45)}
 .cover .top{display:flex;justify-content:space-between;align-items:center}
 .cover .top b{font-size:.82rem;color:var(--ink);line-height:1.1}
 .cover .top b small{display:block;font-weight:500;font-size:.65rem;color:var(--muted)}
 .cover .day{font-size:.7rem;font-weight:700;border:1.4px solid var(--ink);border-radius:999px;padding:2px 9px;color:var(--ink)}
 .cover .mid{margin-top:auto;margin-bottom:auto}
 .cover .base{font-size:.72rem;color:var(--muted);margin-bottom:6px}
-.cover .t{font-size:1.45rem;font-weight:800;color:#1B3A5B;line-height:1.15;letter-spacing:-.02em}
+.cover .t{font-size:1.45rem;font-weight:800;color:var(--brand-2);line-height:1.15;letter-spacing:-.02em}
 .cover .rule{width:34px;height:2px;background:var(--ink);margin:18px 0}
 .cover .q{font-size:.98rem;color:var(--ink-2);line-height:1.45}
 .date{font-size:.88rem;color:var(--muted);margin-bottom:8px}
 .dev blockquote{margin:0 0 18px;font-size:1.06rem;color:var(--ink-2);line-height:1.65}
 .dev blockquote cite{display:block;font-style:normal;font-weight:700;color:var(--ink);margin-top:8px;font-size:.95rem}
 .player{display:flex;align-items:center;gap:14px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin:18px 0}
-.player i{width:40px;height:40px;border-radius:50%;background:var(--ink);display:grid;place-items:center;flex:none}
+.player i{width:40px;height:40px;border-radius:50%;background:var(--brand);display:grid;place-items:center;flex:none}
 .player i::after{content:"";border-left:12px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent;margin-left:3px}
 .player .bar{flex:1;height:4px;background:var(--sand-2);border-radius:4px;position:relative}
 .player .bar::before{content:"";position:absolute;inset:0 72% 0 0;background:var(--accent);border-radius:4px}
@@ -143,8 +143,8 @@ a.card:hover h3{color:var(--accent)}
 .post h3{font-size:1.12rem}
 
 /* quote */
-.verse-band{text-align:center;padding:88px 0;background:var(--ink) url('img/firenze.jpg') center 65%/cover;position:relative;color:#fff}
-.verse-band::before{content:"";position:absolute;inset:0;background:rgba(20,30,38,.72)}
+.verse-band{text-align:center;padding:88px 0;background:var(--brand-3) url('img/firenze.jpg') center 65%/cover;position:relative;color:#fff}
+.verse-band::before{content:"";position:absolute;inset:0;background:rgba(38,46,14,.74)}
 .verse-band .wrap{position:relative}
 .verse-band blockquote{margin:0 auto;max-width:30em;font-size:clamp(1.3rem,2.6vw,1.75rem);line-height:1.4;font-weight:600;letter-spacing:-.01em}
 .verse-band cite{display:block;font-style:normal;margin-top:18px;color:#F0C38E;font-weight:600;font-size:.95rem}
@@ -163,7 +163,7 @@ a.card:hover h3{color:var(--accent)}
 .filters input{flex:1;min-width:220px}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
 .chips span{font-size:.86rem;font-weight:600;padding:7px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink-2);cursor:pointer}
-.chips span.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.chips span.on{background:var(--brand);color:#fff;border-color:var(--brand)}
 
 /* sermon page */
 .sermon{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:start}
@@ -217,16 +217,16 @@ a.card:hover h3{color:var(--accent)}
 .join input{flex:1;min-width:220px;padding:12px 16px;border:1px solid var(--line);border-radius:8px;font-family:var(--font);font-size:.95rem}
 
 /* footer */
-.foot{background:var(--ink);color:#C2C8CE;padding:64px 0 28px;font-size:.92rem}
+.foot{background:var(--brand-3);color:#D3D8C4;padding:64px 0 28px;font-size:.92rem}
 .foot .cols{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:36px}
 .foot h4{color:#fff;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
-.foot a{display:block;margin-bottom:8px;color:#C2C8CE}
+.foot a{display:block;margin-bottom:8px;color:#D3D8C4}
 .foot a:hover{color:#fff}
 .foot .logo-w{background:#fff;border-radius:10px;padding:10px 14px;display:inline-block;margin-bottom:18px}
 .foot .logo-w img{height:44px}
 .foot .soc{display:flex;gap:10px;margin-top:18px}
 .foot .soc a{width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:grid;place-items:center;margin:0;font-size:.72rem;font-weight:700;color:#fff}
-.foot .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.8rem;color:#8E979F}
+.foot .legal{border-top:1px solid rgba(255,255,255,.12);margin-top:44px;padding-top:20px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.8rem;color:#A3AA8E}
 
 /* dashboard */
 .dash{display:grid;grid-template-columns:240px 1fr;min-height:100vh;background:#F5F6F8}
@@ -235,7 +235,7 @@ a.card:hover h3{color:var(--accent)}
 .dash aside .brand img{height:36px}
 .dash aside .grp{font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:#9CA3AF;margin:18px 10px 8px}
 .dash aside a{display:flex;gap:10px;align-items:center;padding:9px 12px;border-radius:9px;font-size:.92rem;color:#374151}
-.dash aside a.on{background:var(--ink);color:#fff}
+.dash aside a.on{background:var(--brand);color:#fff}
 .dash main{padding:28px 34px;min-width:0}
 .dash h1{font-size:1.6rem}
 .panel{background:#fff;border:1px solid #E5E7EB;border-radius:14px;padding:22px 24px;margin-bottom:22px;overflow-x:auto}
@@ -250,7 +250,7 @@ a.card:hover h3{color:var(--accent)}
 .drop .thumb{width:170px;flex:none}
 .dest{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .dest div{border:1.5px solid #E5E7EB;border-radius:11px;padding:11px 13px;font-size:.86rem}
-.dest div.sel{border-color:var(--ink);background:#F3F4F6}
+.dest div.sel{border-color:var(--brand);background:#F4F6EE}
 .dest b{display:block;font-size:.92rem;color:#111827}
 .dest span{color:#6B7280;font-size:.8rem}
 .pipe{list-style:none;margin:0;padding:0}
@@ -262,7 +262,7 @@ a.card:hover h3{color:var(--accent)}
 .tbl td{padding:12px 10px;border-bottom:1px solid #F1F2F4;color:#111827}
 .st{display:inline-block;font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:999px;margin:2px 4px 2px 0}
 .st.g{background:#DCFCE7;color:#166534}.st.y{background:#FEF3C7;color:#92400E}.st.n{background:#F3F4F6;color:#6B7280}
-.dbtn{display:inline-block;background:var(--ink);color:#fff;border-radius:10px;padding:11px 18px;font-weight:600;font-size:.92rem}
+.dbtn{display:inline-block;background:var(--brand);color:#fff;border-radius:10px;padding:11px 18px;font-weight:600;font-size:.92rem}
 
 /* responsive */
 @media (max-width:980px){
